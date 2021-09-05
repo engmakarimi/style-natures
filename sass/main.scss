@@ -12,8 +12,9 @@ $color-primary-dark:#28b485;
 
 $color-gray-dark:#777;
 $color-white:#fff;
+$color-black:#000;
 
-*{
+*,*::after,*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -34,12 +35,12 @@ body{
     clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
     position: relative;
 }
-.logo-box{
+.header__logo-box{
   position: absolute;
   top:40px;
   left: 40px;
 }
-.logo{
+.header__logo{
     height: 35px;
 }
 .text-box{
@@ -121,11 +122,11 @@ margin-bottom: 60px;
 }
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 20px rgba($color-black, .2);
 }
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba($color-black, .2);
 
 }
 .btn-white{
