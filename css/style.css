@@ -337,6 +337,42 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.1); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 3rem; }
+
+.form__input {
+  border: none;
+  padding: 1.5rem 2rem;
+  width: 90%;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid transparent;
+  border-radius: 3px;
+  font-size: inherit;
+  color: inherit;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 4px solid #7ed56f;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4); }
+  .form__input:focus:invalid {
+    border-bottom: 4px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__lable {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  margin-top: 1.2rem;
+  display: block;
+  transition: all .2s; }
+
+.form__input:placeholder-shown + .form__lable {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-4rem); }
+
 .story {
   width: 75%;
   margin: 0 auto;
