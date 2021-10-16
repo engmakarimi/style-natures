@@ -123,7 +123,21 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: #f7f7f7; }
+  position: relative; }
+
+.section-books {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/nat-10.jpg");
+  background-size: cover;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  .book__form {
+    width: 50%;
+    padding: 5rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -186,6 +200,9 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(0px); }
+
+.btn-text .btn-center {
+  margin: 0 auto; }
 
 .card {
   perspective: 150rem;
@@ -319,6 +336,84 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.1); }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6rem;
+  padding-left: 9rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative; }
+  .story__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s; }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover .story__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(50%); }
+  .story__circle {
+    width: 5rem;
+    height: 5rem;
+    clip-path: circle(50% at 50% 50%);
+    background-color: indigo;
+    color: ivory;
+    position: absolute;
+    text-align: center;
+    transform: skewX(12deg);
+    top: -5%;
+    right: 5%; }
+
+.vertical-row {
+  width: 1rem;
+  height: 100%;
+  background-color: mediumseagreen;
+  z-index: -1;
+  position: absolute;
+  display: inline;
+  top: 10%;
+  right: 50%; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: .15; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .row {
   max-width: 114rem;
