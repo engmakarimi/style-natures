@@ -225,7 +225,7 @@
           <div class="book__form">
             <div class=" u-margin-bottom-big">
               <h2 class="heading-secondary">book now</h2>
-              <form autocomplete="off">
+              <form action='#' class="form" autocomplete="off">
               <div class="form__group">
                 <input id='name' type="text" class="form__input" placeholder="Name" required/>
                 <lable for="name" class="form__lable">Name</lable>
@@ -233,6 +233,16 @@
                 <div class="form__group">
                 <input id='email' class="form__input" type="text" placeholder="please inter Email" required/>
                 <lable for="email" class="form__lable">Email</lable>
+               </div>
+               <div class="form__group">
+                 <div class="form__raido-group">
+                   <input class="form__raido-input" id='small' type="radio" name='size'>
+                   <lable for='small' class="form__raido-lable"><span class="form__raido-button"></span>small trip</lable>
+                 </div>
+                 <div class="form__raido-group" >
+                  <input class="form__raido-input" id='large' type="radio" name='size'>
+                  <lable for='large' class="form__raido-lable"><span class="form__raido-button"></span> trip</lable>
+                 </div>
                </div>
               </form>
             </div>
