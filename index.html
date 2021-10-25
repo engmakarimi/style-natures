@@ -12,6 +12,21 @@
 </head>
 
 <body>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navmenu">
+    <label for="navmenu" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <div class="navigation__nav">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a href="" class="navigation__link">about</a></li>
+      <li class="navigation__item"><a href="" class="navigation__link">more tours</a></li>
+      <li class="navigation__item"><a href="" class="navigation__link">your benefits</a></li>
+      <li class="navigation__item"><a href="" class="navigation__link">more advanture</a></li>
+    </ul>
+  </div>
+  </div>
   <header class="header">
     <div class="header__logo-box">
       <img src="img/logo-white.png" alt="logo" class="header__logo" />
@@ -86,7 +101,7 @@
         </div>
       </div>
     </section>
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">most popular tours</h2>
       </div>
@@ -114,7 +129,7 @@
                    <p class="card__price-only">only</p>
                    <p class="card__price-value">5200$</p>
                  </div>
-                 <a href="#" class="btn btn--white">book now</a>
+                 <a href="#popup" class="btn btn--white">book now</a>
                </div>
             </div>
           </div>
@@ -142,7 +157,7 @@
                   <p class="card__price-only">only</p>
                   <p class="card__price-value">5200$</p>
                 </div>
-                <a href="#" class="btn btn--white">book now</a>
+                <a href="#popup" class="btn btn--white">book now</a>
               </div>
             </div>
 
@@ -171,7 +186,7 @@
                   <p class="card__price-only">only</p>
                   <p class="card__price-value">5200$</p>
                 </div>
-                <a href="#" class="btn btn--white">book now</a>
+                <a href="#popup" class="btn btn--white">book now</a>
               </div>
             </div>
         </div>
@@ -236,12 +251,12 @@
                </div>
                <div class="form__group">
                  <div class="form__raido-group">
-                   <input class="form__raido-input" id='small' type="radio" name='size'>
-                   <lable for='small' class="form__raido-lable"><span class="form__raido-button"></span>small trip</lable>
+                   <input class="form__raido-input" id='smalltrip' type="radio" name='size'>
+                   <lable for='smalltrip' class="form__raido-lable"><span class="form__raido-button"></span>small trip</lable>
                  </div>
                  <div class="form__raido-group" >
-                  <input class="form__raido-input" id='large' type="radio" name='size'>
-                  <lable for='large' class="form__raido-lable"><span class="form__raido-button"></span> trip</lable>
+                  <input class="form__raido-input" id='largetrip' type="radio" name='size'>
+                  <lable for='largetrip' class="form__raido-lable"><span class="form__raido-button"></span> trip</lable>
                  </div>
                </div>
               </form>
@@ -250,6 +265,23 @@
         </div>
       </div>
     </section>
+    <div class="popup" id='popup'>
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./img/nat-8.jpg" alt="tour photo" class="popup__img">
+          <img src="./img/nat-9.jpg" alt="adventure photo" class="popup__img">
+        </div>
+        <div class='popup__right'>
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary"> start booking now</h2>
+          <h3 class="heading-tertiary">importante &ndash; test tstststststst</h3>
+          <p class="popup__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum rerum consequuntur nesciunt. Tempora ullam omnis cum nesciunt sapiente tempore. Vero delectus placeat itaque eveniet, tempore ullam consectetur assumenda eligendi quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure praesentium vero quisquam fugit deleniti. Eos dolore praesentium explicabo deleniti enim quae quod tenetur quas repudiandae ipsum, aspernatur adipisci debitis.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus placeat facilis, asperiores minus fugit consequatur similique repudiandae dignissimos tempora impedit obcaecati, aspernatur ad officiis sit. Consectetur laudantium reprehenderit eos ducimus!
+          </p>
+          <a href="#" class="btn btn-green">Book Now</a>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 

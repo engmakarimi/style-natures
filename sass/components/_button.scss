@@ -48,6 +48,9 @@
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
+    &-green{
+        background-color: $color-primary;
+     }
 }
 .btn-text{
     &:link,&:visited{
@@ -73,4 +76,5 @@
         
         margin: 0 auto;
     }
+   
 }
